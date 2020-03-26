@@ -1,6 +1,6 @@
 import React, {useState ,useEffect} from 'react';
 import {Feather} from "@expo/vector-icons";
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native'
 import {View, FlatList, Image, Text, TouchableOpacity} from 'react-native';
 
 import api from '../../services/api';
@@ -26,7 +26,7 @@ export default function Incidents(){
             return;
         }
 
-        if (total > 0 && incidents.length == total) {
+        if (total > 0 && incidents.length === total) {
             return;
         }
 
@@ -39,7 +39,7 @@ export default function Incidents(){
         setIncidents([...incidents, ...response.data]);
         setTotal(response.headers['x-total-count']);
         setPage(page + 1);
-        setLoading(false);
+        setLoading(false)
     }
 
     useEffect(()=>{
@@ -64,7 +64,7 @@ export default function Incidents(){
                 showsVerticalScrollIndicator={false}
                 onEndReached={loadIncidents}
                 onEndReachedThreshold={0.2}
-                renderItem={({item: incident})=>(
+                renderItem={ ({item: incident}) => (
                     <View style={styles.incident}>
                         <Text style={styles.incidentProperty}>ONG:</Text>
                         <Text style={styles.incidentValue}>{incident.name}</Text>

@@ -16,7 +16,7 @@ export default StyleSheet.create({
     },
 
     incident:{
-        padding:12,
+        padding:24,
         borderRadius:8,
         backgroundColor:'#fff',
         marginBottom:16,
@@ -37,7 +37,7 @@ export default StyleSheet.create({
     },
 
     contactBox:{
-        padding:12,
+        padding:24,
         borderRadius:8,
         backgroundColor:'#fff',
         marginBottom:16,
@@ -45,7 +45,7 @@ export default StyleSheet.create({
 
     heroTitle:{
         fontWeight:'bold',
-        fontSize:10,
+        fontSize:20,
         color:'#13131a',
         lineHeight:30,
     },
